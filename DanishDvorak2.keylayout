@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Tobias on  Ukelele for http://www.danskdvorak.dk-->
-<!--Last edited by Ukelele version 2.1.7 on 2011-09-02 at 08:49 (CEST)-->
+<!--Last edited by Ukelele version 2.2.1 on 2012-08-12 at 21:11 (CEST)-->
 <keyboard group="126" id="-200" name="DanskDvorak" maxout="10">
     <layouts>
         <layout first="0" last="17" modifiers="Modifiers" mapSet="ANSI"/>
@@ -266,7 +266,7 @@
             <key code="32" output="α"/>
             <key code="33" output="≤"/>
             <key code="34" output="ç"/>
-            <key code="35" output="†"/>
+            <key code="35" output="ł"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="№"/>
             <key code="38" output="http://"/>
@@ -456,7 +456,7 @@
             <key code="32" output="β"/>
             <key code="33" output="≥"/>
             <key code="34" output="Ç"/>
-            <key code="35" output="‡"/>
+            <key code="35" output="Ł"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="ℕ"/>
             <key code="38" output="https://"/>
@@ -917,7 +917,7 @@
     <terminators>
         <when state="Cedille" output="¸"/>
         <when state="Hacek" output="ˇ"/>
-        <when state="Hatt" output="ˆ"/>
+        <when state="Hatt" output="^"/>
         <when state="Lang vokal" output="̄"/>
         <when state="accent" output="`"/>
         <when state="acute" output="´"/>
