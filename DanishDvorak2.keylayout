@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Tobias on  Ukelele for http://www.danskdvorak.dk-->
-<!--Last edited by Ukelele version 2.2.4 on 2013-06-26 at 09:55 (CEST)-->
+<!--Last edited by Ukelele version 2.2.4 on 2013-11-12 at 09:41 (CET)-->
 <keyboard group="126" id="-200" name="DanskDvorak" maxout="10">
     <layouts>
         <layout first="0" last="17" modifiers="Modifiers" mapSet="ANSI"/>
@@ -440,7 +440,7 @@
             <key code="16" output="ƒ"/>
             <key code="17" output="Ÿ"/>
             <key code="18" output="¡"/>
-            <key code="19" output="®"/>
+            <key code="19" action="&#x0022;"/>
             <key code="20" output="₤"/>
             <key code="21" output="℃"/>
             <key code="22" output="¶"/>
@@ -463,7 +463,7 @@
             <key code="39" output="°"/>
             <key code="40" output="℁"/>
             <key code="41" output="∫"/>
-            <key code="42" output="˝"/>
+            <key code="42" action="˙"/>
             <key code="43" output="„"/>
             <key code="44" output="—"/>
             <key code="45" output="“"/>
@@ -534,6 +534,9 @@
         </keyMap>
     </keyMapSet>
     <actions>
+        <action id="&#x0022;">
+            <when state="none" next="Double Acute"/>
+        </action>
         <action id="A">
             <when state="none" output="A"/>
             <when state="Cedille" output="A"/>
@@ -603,6 +606,7 @@
         <action id="O">
             <when state="none" output="O"/>
             <when state="Cedille" output="O"/>
+            <when state="Double Acute" output="Ő"/>
             <when state="Hacek" output="Ǒ"/>
             <when state="Hatt" output="Ô"/>
             <when state="Lang vokal" output="Ō"/>
@@ -633,6 +637,7 @@
         <action id="U">
             <when state="none" output="U"/>
             <when state="Cedille" output="U"/>
+            <when state="Double Acute" output="Ű"/>
             <when state="Hacek" output="Ǔ"/>
             <when state="Hatt" output="Û"/>
             <when state="Lang vokal" output="Ū"/>
@@ -644,6 +649,7 @@
         <action id="Y">
             <when state="none" output="Y"/>
             <when state="Cedille" output="Y"/>
+            <when state="Double Acute" output="Ӳ"/>
             <when state="Hacek" output="Y"/>
             <when state="Hatt" output="Ŷ"/>
             <when state="Lang vokal" output="Ȳ"/>
@@ -769,6 +775,7 @@
         <action id="o">
             <when state="none" output="o"/>
             <when state="Cedille" output="o"/>
+            <when state="Double Acute" output="ő"/>
             <when state="Hacek" output="ǒ"/>
             <when state="Hatt" output="ô"/>
             <when state="Lang vokal" output="ō"/>
@@ -811,6 +818,7 @@
         <action id="u">
             <when state="none" output="u"/>
             <when state="Cedille" output="u"/>
+            <when state="Double Acute" output="ű"/>
             <when state="Hacek" output="ǔ"/>
             <when state="Hatt" output="û"/>
             <when state="Lang vokal" output="ū"/>
@@ -847,6 +855,7 @@
         <action id="y">
             <when state="none" output="y"/>
             <when state="Cedille" output="y"/>
+            <when state="Double Acute" output="ӳ"/>
             <when state="Hacek" output="y"/>
             <when state="Hatt" output="ŷ"/>
             <when state="Lang vokal" output="ȳ"/>
@@ -876,6 +885,9 @@
             <when state="Lang vokal" output="`"/>
             <when state="accent" output="ˆ"/>
             <when state="acute" output="̈"/>
+        </action>
+        <action id="®">
+            <when state="none" next="State 0"/>
         </action>
         <action id="¯">
             <when state="none" next="Lang vokal"/>
@@ -913,12 +925,17 @@
             <when state="none" next="Hacek"/>
             <when state="Lang vokal" output="̂"/>
         </action>
+        <action id="˙">
+            <when state="none" next="State 0"/>
+        </action>
     </actions>
     <terminators>
         <when state="Cedille" output="¸"/>
+        <when state="Double Acute" output="˝"/>
         <when state="Hacek" output="ˇ"/>
         <when state="Hatt" output="^"/>
         <when state="Lang vokal" output="̄"/>
+        <when state="State 0" output="˝"/>
         <when state="accent" output="`"/>
         <when state="acute" output="´"/>
         <when state="cirumflex" output="^"/>
