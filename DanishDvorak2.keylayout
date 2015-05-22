@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Tobias on  Ukelele for http://www.danskdvorak.dk-->
-<!--Last edited by Ukelele version 2.2.4 on 2013-11-12 at 09:41 (CET)-->
+<!--Last edited by Ukelele version 2.2.8 on 2015-05-22 at 15:11 (CEST)-->
 <keyboard group="126" id="-200" name="DanskDvorak" maxout="10">
     <layouts>
         <layout first="0" last="17" modifiers="Modifiers" mapSet="ANSI"/>
@@ -76,7 +76,7 @@
             <key code="39" output="-"/>
             <key code="40" action="t"/>
             <key code="41" action="s"/>
-            <key code="42" output="@"/>
+            <key code="42" output="&#x0027;"/>
             <key code="43" action="w"/>
             <key code="44" action="z"/>
             <key code="45" output="b"/>
@@ -273,7 +273,7 @@
             <key code="39" output="•"/>
             <key code="40" output="ª"/>
             <key code="41" output="∑"/>
-            <key code="42" output="&#x0027;"/>
+            <key code="42" output="@"/>
             <key code="43" output="www."/>
             <key code="44" output="–"/>
             <key code="45" output="‘"/>
